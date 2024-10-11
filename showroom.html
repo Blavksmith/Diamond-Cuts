@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiamondCut Motors</title>
+    <link rel="stylesheet" href="showroomstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="left-nav">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="cars.html" class="active">Cars</a></li>
+            </ul>
+            <div class="logo">
+                <img src="assets/Frame 2.png" alt="Logo">
+            </div>
+            <ul class="right-nav">
+                <li><a href="showroom.html" class="active">Showroom</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-separator"></div>
+    </header>
+
+    <section class="hero">
+        <img src="assets/Rectangle 9.png" alt="Hero Image">
+        <div class="hero-text">
+            <p>Ferrari La-Coupe</p>
+            <div class="hero-stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>    
+        </div>
+    </section>
+
+    <div class="separators"></div>
+
+    <section class="showroom">
+        <h2>SHOWROOM</h2>
+        <br>
+        <div class="brand">
+            <img src="assets/ferrari.png" alt="Ferrari Logo">
+            <br>
+            <br>
+            <div class="car-gallery" id="ferrariGallery">
+                <button class="prev" onclick="moveSlide(-1, 'ferrari')">&#10094;</button>
+                <div class="gallery-item">
+                    <a href="success.html">
+                    <img src="assets/Rectangle 30.png" alt="Ferrari Car 1">
+                    </a>
+                    <div class="car-text">
+                        <h3>Ferrari L3</h3>
+                        <p>$492,000 USD</p>
+            
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="success.html">
+                        <img src="assets/Rectangle 31.png" alt="Ferrari Car 1">
+                    </a>
+                    <div class="car-text">
+                        <h3>Ferrari MP-2</h3>
+                        <p>$520,000 USD</p>
+
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="success.html">
+                        <img src="assets/Rectangle 32.png" alt="Ferrari Car 1">
+                     </a>
+                    <div class="car-text">
+                        <h3>Ferrari 70s</h3>
+                        <p>$600,000 USD</p>
+                    </div>
+                </div>
+                <button class="next" onclick="moveSlide(1, 'ferrari')">&#10095;</button>
+            </div>
+        </div>
+        
+        <div class="brand">
+            <br>
+            <br>
+            <img src="assets/lambo.png" alt="Lamborghini Logo">
+            <br>
+            <br>
+            <div class="car-gallery" id="lamboGallery">
+                <button class="prev" onclick="moveSlide(-1, 'lambo')">&#10094;</button>
+                <div class="gallery-item">
+                    <a href="success.html">
+                    <img src="assets/Rectangle 31-1.png" alt="Lamborghini Car 1">
+                    </a>
+
+                    <div class="car-text">
+                    
+                    <h3>Lamborghini Gallardo</h3>
+                    <p>$800,000 USD</p>
+                    </div>
+
+                </div>
+                <div class="gallery-item">
+                    <a href="success.html">
+                    <img src="assets/Rectangle 32-1.png" alt="Lamborghini Car 2">
+                    </a>
+                    <div class="car-text">
+                        <h3>Lamborghini Aventador</h3>
+                        <p>$775,000 USD</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="success.html">
+                    <img src="assets/Rectangle 33.png" alt="Lamborghini Car 3">
+                    </a>
+                    <div class="car-text">
+                        <h3>Lamborghini Cannagi</h3>
+                        <p>$700,000 USD</p>
+                    </div>
+                </div>
+                <button class="next" onclick="moveSlide(1, 'lambo')">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+</section>
+<div class="separators"></div>
+<footer>
+    <h2>FIND OUT MORE ABOUT US!</h2>
+    
+    <div class="social-media">
+        <a href="http://instagram/diamondcut_motors.com" target="_blank"><img src="assets/instagram.png"> </a>
+        <a href="http://instagram/diamondcut_motors.com" target="_blank">@diamondcut.motors</a>
+        
+        <a href="http://facebook/DiamondCutMotors.com" target="_blank"> <img src="assets/facebook.png"> </a>
+        <a href="http://facebook/DiamondCutMotors.com" target="_blank">Diamond Cut Motors</a>
+        
+        <a href="http://twitter/diamondcut_motors.com"target="_blank"> <img src="assets/twitter.png"> </a>
+        <a href="http://twitter/diamondcut_motors.com" target="blank">@diamondcut_motors</a>
+    
+    <div class="footer-separator"></div>
+
+    </div>
+    <p>&copy; 2024 DiamondCut Motors. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Settings</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

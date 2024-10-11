@@ -1,0 +1,380 @@
+:root {
+    --primary-font: 'Didact Gothic', sans-serif;
+    --secondary-font: 'Cantata One', serif;
+    --background-color: #000;
+    --text-color: #fff;
+    --secondary-bg-color: #333;
+    --accent-color: #e60000;
+    --card-bg-color: #111;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-nav li, .right-nav li {
+    margin: 0px 10px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.right-nav a.active {
+    color: #ffffff;
+}
+
+.left-nav a.active {
+    color: #ffffff;
+}
+
+.right-nav a:hover {
+    color: #a1a1a1;
+}
+
+.left-nav a:hover {
+    color: #a1a1a1;
+}
+
+
+.logo img{
+    width: 150px;
+}
+
+
+
+.nav-separator {
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: max-content;
+}
+
+.hero-text {
+    position: absolute;
+    text-align: left;
+    letter-spacing: 3px;
+    bottom: 30px;
+    left: 40px;
+}
+
+
+.hero-stars {
+    font-size: 2em;
+    color: gold;
+}
+
+.luxury {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 150px 100px;
+    margin: 0;
+}
+
+.luxury-text {
+    font-family: var(--secondary-font);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+
+
+.luxury h1 {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 10px 20px 0 0;
+    flex: 1;
+}
+
+.separator {
+    height: 200px;
+    width: 2px;
+    background-color: var(--accent-color);
+    margin: 0 20px;
+}
+
+.luxury-subtext {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    flex: 1;
+    text-align: justify;
+}
+
+.luxury-subtext p {
+    font-size: 1.2em;
+    margin: 0 0 20px 0;
+    margin-right: 120px;
+}
+
+.luxury-subtext button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    
+}
+
+
+.luxury-subtext button:hover {
+    background-color: #cc0000;
+}
+
+
+.featured-cars {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.featured-cars h2 {
+    font-family: var(--secondary-font);
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.featured-cars p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.car-grid {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.car {
+    background-color: var(--card-bg-color);
+    border: 3px solid rgb(49, 49, 49);
+    padding: 20px;
+    margin: 0px;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 20px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.car h3 {
+    font-family: '';
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.car p {
+    font-size: 1.2em;
+    color: #ccc;
+    text-align: justify;
+    max-width: calc(100% - 40px);
+    overflow:hidden;
+    text-overflow: ellipsis;
+
+}
+
+footer {
+    background-image: linear-gradient(to bottom right, #c6c2c2, #000000);
+    color: var(--text-color);
+    text-align: center;
+    padding: 60px;
+}
+
+footer img{
+    width: 20px;
+}
+
+footer h2{
+    font-family: var(--secondary-font);
+    letter-spacing: 3px;
+    font-size: 2em
+    
+}
+
+footer p {
+    margin: 15px 0;
+}
+
+.footer-separator {
+    height: 2px;
+    width: 100%;
+    background-color: #fff; /* White separator */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+
+.social-media a {
+    color: var(--text-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 30px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .left-nav, .right-nav {
+        font-size: 0.9em;
+    }
+
+    .nav-separator {
+        background-color: #e60000;
+    }
+
+    .hero img{
+        height: auto;
+    }
+
+    .hero-text{
+        position: static;
+        text-align: center;
+        
+    }
+
+    .hero-stars{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .luxury {
+        padding: 50px 20px;
+    }
+
+
+    .luxury-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .luxury-text h1{
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .luxury-subtext{
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 30px;
+        
+    }
+
+    .luxury-subtext p{
+
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .luxury-subtext button{
+        margin-left:calc(33%)
+    }
+
+
+
+
+
+
+    .separator {
+        display: none;
+    }
+
+    .car {
+        flex: 1 1 80%;
+        margin-bottom: 20px;
+    }
+
+    .car img {
+        max-width: 100%;
+    }
+
+    footer h2, footer p {
+        font-size: 20px;
+    }
+
+
+    .footer-separator {
+        margin: 15px 0;
+    }
+
+    .social-media a, .footer-links a {
+        margin: 0 5px
+       }
+
+    .social-media{
+        font-size: 20px;
+    }
+
+}
+
+

@@ -1,0 +1,375 @@
+:root {
+    --primary-font: 'Didact Gothic', sans-serif;
+    --secondary-font: 'Cantata One', serif;
+    --background-color: #000;
+    --text-color: #fff;
+    --secondary-bg-color: #333;
+    --accent-color: #e60000;
+    --card-bg-color: #111;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-nav li, .right-nav li {
+    margin: 0px 10px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.right-nav a.active {
+    color: #ffffff;
+}
+
+.left-nav a.active {
+    color: #ffffff;
+}
+
+.right-nav a:hover {
+    color: #a1a1a1;
+}
+
+.left-nav a:hover {
+    color: #a1a1a1;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.nav-separator {
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.hero img{
+    width: 100%
+}
+
+.hero-text{
+    position: absolute;
+    letter-spacing: 3px;
+    bottom: 30px;
+    left: 40px;
+}
+
+.hero-stars{
+    color:gold;
+    font-size: 2em;
+}
+
+
+.showroom {
+    padding: 300px;
+    text-align: center;
+}
+
+.showroom h2 {
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.car-gallery {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 50px;
+    overflow:visible;
+}
+
+.car-gallery:hover .gallery-item img {
+    transform: scale(1.1);
+}
+
+
+.showroom{
+letter-spacing: 5px;
+}
+
+.gallery-item{
+    display: grid;
+    position: relative;
+    text-align: center;
+    transition: 0.3 ease, background-color 0.3 ease;
+}
+
+.gallery-item img{
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1); 
+    background-color: rgba(202, 202, 202, 0.8);
+}
+
+
+.gallery-item.active{
+    display: block;
+}
+
+
+.car-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px;
+    width: calc(100% - 20px);
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.car-text h3{
+    font-family: var(--secondary-font);
+}
+
+.separators {
+    height: 2px;
+    width: 100%;
+    background-color: #ff0000; 
+    margin: 0 0; 
+    }
+
+
+    button.prev, button.next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    button.prev {
+        left: 0;
+    }
+    
+    button.next {
+        right: 0;
+    }
+    
+    button.prev:hover, button.next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* footer */
+footer {
+    background-image: linear-gradient(to bottom right, #c6c2c2, #000000);
+    color: var(--text-color);
+    text-align: center;
+    padding: 60px;
+}
+
+footer img{
+    width: 20px;
+}
+
+footer h2{
+    font-family: var(--secondary-font);
+    letter-spacing: 3px;
+    font-size: 2em
+    
+}
+
+footer p {
+    margin: 15px 0;
+}
+
+.footer-separator {
+    height: 2px;
+    width: 100%;
+    background-color: #fff; /* White separator */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+
+.social-media a {
+    color: var(--text-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 30px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .left-nav, .right-nav {
+        font-size: 0.9em;
+    }
+
+    .nav-separator {
+        background-color: #e60000;
+    }
+
+
+    .hero-text {
+       position: static;
+       text-align: center;
+    }
+
+    .showroom h2{
+
+        margin-top: -70px;
+    }
+
+    .hero-stars{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .showroom {
+        padding: 150px 20px;
+    }
+
+    .showroom h2 {
+        font-size: 24px;
+    }
+
+    .brand-container {
+        gap: 20px;
+    }
+
+    .brand img {
+        max-width: 60px;
+        margin-bottom: 5px;
+    }
+
+    .car-gallery {
+        gap: 20px;
+    }
+
+    .gallery-item img {
+        max-width: 100%;
+    }
+
+    .car-gallery {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+        overflow: visible; 
+        width: 200px
+    }
+
+    .gallery-item {
+        display:grid;
+        position:relative;
+        text-align: center;
+        transition: 0.3s ease, background-color 0.3s ease;
+        width: 100%;
+    }
+
+
+    .car-text {
+        position: static; 
+        transform: none; 
+        color: white;
+        padding: 10px; 
+        width: 100%; 
+        text-align: center; 
+        box-sizing: border-box;
+        font-size: 14px; 
+    }
+
+    .car-text h3 {
+        font-family: var(--secondary-font);
+        font-size: 18px; 
+        margin-bottom: 5px; 
+    }
+
+    .car-text p {
+        margin: 0; 
+    }
+
+
+    footer h2, footer p {
+        font-size: 20px;
+    }
+
+
+    .footer-separator {
+        margin: 15px 0;
+    }
+
+    .social-media a, .footer-links a {
+        margin: 0 5px
+       }
+
+    .social-media{
+        font-size: 20px;
+    }
+}
+
